@@ -14,13 +14,10 @@ html, body {
     width: 100%;
     z-index: 1;
     opacity: 100;
-    /* background-color: #9a66b3; */
-    /* background-color: #C58B8B; */
     font-family: 'Dekko', serif;
     font-weight: normal;
     font-size: large;
     text-shadow: 1px 1px 3px rgb(62, 55, 55);
-    /* drop-shadow( <length> <length> <length> <color> ) */
     filter: drop-shadow(2px 2px 5px rgb(62, 55, 55));
     top: 0px; 
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -49,16 +46,7 @@ html, body {
     text-decoration: none;
 }
 .nav_bar a:hover {
-    /* background-color: #9C6644; */
-    /* background-image: url(frame.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: overlay; */
     color:#ffc78f;
-    /* background-image: url(robert-zunikoff-j0vIeF69Jgc-unsplash.jpg);
-    background-size: contain;
-    background-blend-mode: overlay; */
 }
 
 /*~~~~~~~~ BANNER ~~~~~~~~~~~~~~~~~~*/
@@ -82,13 +70,6 @@ html, body {
     position: absolute;
     top:0px;
 }
-/* h1 {
-    font-size: 4rem;
-    color: #48090a;
-    offset-x | offset-y | blur-radius | color
-    text-shadow: 1px 1px 3px rgb(62, 55, 55);
-} */
-
 .curtains {
     position: absolute;
     height: 70vh;
@@ -106,13 +87,6 @@ html, body {
 }
 
 /*~~~~~~~~ PRODUCTS ~~~~~~~~~~~~~~~~~*/
-/* .FcenterContain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem 5rem 3rem 5rem;
-    font-family: "Dekko", serif;
-} */
 .FcenterContain {
     display: flex;
     flex-direction: column;
@@ -135,7 +109,6 @@ h1 {
     font-size: 1.2rem;
     color: #52796F;
     align-items: center;
-    /* filter: drop-shadow(1px 1px 1px rgb(54, 39, 39)); */
 }
 .productImgs {
     width: 100%;
