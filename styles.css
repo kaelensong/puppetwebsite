@@ -1,0 +1,254 @@
+html, body {
+    background-color: #D4A373;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+/*~~~~~~~~ NAVIGATION BAR ~~~~~~~~~~~~~~~~~~*/
+
+.nav_bar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: 100;
+    /* background-color: #9a66b3; */
+    /* background-color: #C58B8B; */
+    font-family: 'Dekko', serif;
+    font-weight: normal;
+    font-size: large;
+    text-shadow: 1px 1px 3px rgb(62, 55, 55);
+    /* drop-shadow( <length> <length> <length> <color> ) */
+    filter: drop-shadow(2px 2px 5px rgb(62, 55, 55));
+    top: 0px; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.nav_bar.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar li {
+    display: inline;
+}
+
+.nav_bar a {
+    display: inline-block;
+    padding: 10px 20px;
+    color:#f3dec9;
+    text-decoration: none;
+}
+.nav_bar a:hover {
+    /* background-color: #9C6644; */
+    /* background-image: url(frame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay; */
+    color:#ffc78f;
+    /* background-image: url(robert-zunikoff-j0vIeF69Jgc-unsplash.jpg);
+    background-size: contain;
+    background-blend-mode: overlay; */
+}
+
+/*~~~~~~~~ BANNER ~~~~~~~~~~~~~~~~~~*/
+.banner {
+    background-image: url(robert-zunikoff-j0vIeF69Jgc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #aa8ab1;
+    height: 60vh;
+    font-family: "Dekko", serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    margin-bottom: 3rem;
+}
+.titlePic {
+    height: 40%;
+    position: absolute;
+    top:0px;
+}
+/* h1 {
+    font-size: 4rem;
+    color: #48090a;
+    offset-x | offset-y | blur-radius | color
+    text-shadow: 1px 1px 3px rgb(62, 55, 55);
+} */
+
+.curtains {
+    position: absolute;
+    height: 70vh;
+    filter: drop-shadow(2px 2px 3px rgb(113, 101, 101));
+}
+
+.left{
+    left: -5%;
+    top: -5%;
+}
+
+.right{
+    right: -5%;
+    top: -5%;
+}
+
+/*~~~~~~~~ PRODUCTS ~~~~~~~~~~~~~~~~~*/
+/* .FcenterContain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 5rem 3rem 5rem;
+    font-family: "Dekko", serif;
+} */
+.FcenterContain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 5rem 3rem 5rem;
+    font-family: "Dekko", serif;
+}
+h1 {
+    color: #9C6644;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 3fr));
+    gap: 2rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #52796F;
+    align-items: center;
+    /* filter: drop-shadow(1px 1px 1px rgb(54, 39, 39)); */
+}
+.productImgs {
+    width: 100%;
+    filter: drop-shadow(1px 1px 4px rgb(54, 39, 39));
+}
+.productImgs:hover {
+    outline: 5px solid #52796F;
+    cursor: pointer;
+}
+.product {
+    text-align: center;
+}
+
+p{
+    margin: 5px;
+    padding: 0px;
+}
+
+.buttonContain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+button {
+    background-color:#C58B8B;
+    font-family: 'Dekko', serif;
+    padding: 10px 40px;
+    color: #9C6644;
+    filter: drop-shadow(1px 1px 2px #7a5f43);
+    border:none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bolder;
+    margin: 12px;
+}
+button:hover {
+    background-color:#52796F;
+    cursor: pointer;
+    color: #D4A373;
+}
+
+/*~~~~~~~~ SHORT BLURB ~~~~~~~~~~~~~~~~~*/
+.blurbCenterFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 6rem 3rem 6rem;
+    font-family: "Dekko", serif;
+}
+.blurb {
+    text-align: center;
+    font-style: italic;
+    font-family: "Dekko", serif;
+    font-size: 1.1rem;
+    color:#52796F;
+}
+
+/*~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~*/
+.footerContain {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 1;
+
+    background-color: #9C6644;
+    font-family: "Dekko", serif;
+    font-weight: bolder;
+    font-size: medium;
+}
+/*~ top right bottom left ~*/
+.footer {
+    margin: 2rem 10rem 2rem 5rem;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    display: block;
+    padding: 5px 5px;
+    color: #D4A373;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgb(62, 55, 55);
+}
+.footer a:hover {
+    color: #C58B8B;
+    text-shadow: 1px 1px 3px rgb(62, 55, 55);
+}
+
+/* FOR MOBILE */
+@media only screen and (max-width: 700px) {
+    button {
+       padding: 5px 10px;
+    }
+    .titlePic {
+        height: auto;
+        width: 70vw;
+    }
+    .banner {
+        height: 40vh;
+    }
+    .curtains {
+       height: 50vh;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .productGrid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
