@@ -16,7 +16,7 @@ html, body {
     opacity: 100;
     font-family: 'Dekko', serif;
     font-weight: normal;
-    font-size: large;
+    font-size: larger;
     text-shadow: 1px 1px 3px rgb(62, 55, 55);
     filter: drop-shadow(2px 2px 5px rgb(62, 55, 55));
     top: 0px; 
